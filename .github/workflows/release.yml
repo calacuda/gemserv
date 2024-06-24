@@ -18,14 +18,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run Check
-        run: cargo check --verbose
+        run: cargo check
       # - name: Run tests
-      #   run: cargo test --verbose
+      #   run: cargo test
       # - name: Run Clippy
-      #   run: cargo clippy --verbose
+      #   run: cargo clippy
       - name: Run Build
         run: cargo build --release
-      
       - uses: actions/checkout@v3
       - name: get version
         run: echo "::set-output name=version::$(cat 'Cargo.toml' | rg 'version' | head -n 1 | cut -d '\"' -f 2)"
