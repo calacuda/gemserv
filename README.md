@@ -76,16 +76,8 @@ TLS variables
  - TLS_CLIENT_HASH
  - REMOTE_USER
 
-## Changelog
+## TODO
 
-### [0.6.6] - 20220217
-
-Bug fix: File path is checked to make sure it's in the root directory or in ~/public_gemini
-
-### [0.6.5] - 20220209
-
-Bug fix: Another traversal bug.
-
-### [0.6.4] - 20220202
-
-Fixed a file system traversal bug. All previous versions are unsafe.
+- [ ] find bugs/vulns
+- [ ] fix the above
+- [ ] fully update the code base deps
