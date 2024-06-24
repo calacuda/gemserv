@@ -1,4 +1,4 @@
-use crate::lib::errors;
+use crate::gemserv::errors;
 use crate::status;
 use log::{info, warn};
 use std::net::SocketAddr;

@@ -1,6 +1,6 @@
 extern crate serde_derive;
 extern crate toml;
-use crate::lib::errors;
+use crate::gemserv::errors;
 use std::collections::HashMap;
 use std::env;
 use std::net;

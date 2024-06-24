@@ -4,7 +4,7 @@ use std::sync::Arc;
 use std::time::SystemTime;
 
 use rustls::client::{HandshakeSignatureValid, ServerCertVerified, ServerCertVerifier, ServerName};
-use rustls::internal::msgs::enums::SignatureScheme;
+use rustls::SignatureScheme;
 use rustls::internal::msgs::handshake::DigitallySignedStruct;
 use rustls::internal::msgs::handshake::DistinguishedNames;
 use rustls::server::{ClientCertVerified, ClientCertVerifier, ResolvesServerCertUsingSni};

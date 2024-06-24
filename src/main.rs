@@ -7,17 +7,18 @@ extern crate lazy_static;
 mod cgi;
 mod con_handler;
 mod config;
-mod lib;
+mod gemserv;
 mod logger;
 #[cfg(feature = "proxy")]
 mod revproxy;
 
-use lib::conn;
-use lib::errors;
-use lib::server;
-use lib::status;
-use lib::tls::{self, tls_acceptor_conf};
-use lib::util;
+// use gemserv as lib;
+use gemserv::conn;
+use gemserv::errors;
+use gemserv::server;
+use gemserv::status;
+use gemserv::tls::{self, tls_acceptor_conf};
+use gemserv::util;
 
 use tokio::signal::unix;
 use tokio::sync::watch;
